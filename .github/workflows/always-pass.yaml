@@ -1,15 +1,15 @@
 name: GitHub Actions Demo
 on: [pull_request]
 jobs:
-  always-fail:
+  always-pass:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
       - name: Run tests
         run: bash ./hello_test.sh
-  always-pass:
+  always-fail:
     runs-on: ubuntu-latest
     steps:
-      - run: exit 0
+      - run: exit 1
 
