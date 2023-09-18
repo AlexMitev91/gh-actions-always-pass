@@ -1,3 +1,5 @@
 To be merged for testing the "always pass" workflow
 
 Now changing the workflow to "always fail"
+
+Testing GH acations with bash script
